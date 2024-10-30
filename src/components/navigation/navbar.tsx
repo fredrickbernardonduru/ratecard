@@ -3,6 +3,8 @@ import React from "react";
 import Icons from "../global/icons";
 
 const Navbar = () => {
+  const user = false;
+
   return (
     <header className="px-4 h-14 sticky top-0 inset-x-0 w-full bg-background/40 backdrop-blur-lg border-b border-border z-50">
       <div className="flex items-center justify-between h-full mx-auto md:max-w-screen-xl">
@@ -15,31 +17,32 @@ const Navbar = () => {
 
         <nav
           className="hidden md:flex absolute left-1/2 top-1/2
-                -translate-x-1/2 -translate-y-12 transform"
+                -translate-x-1/2 -translate-y-1/2 transform"
         >
           <ul className="flex items-center justify-center gap-8">
             <li className="hover:text-foreground/80 text-sm">
-              <Link href="#">
-                  Pricing
-              </Link>
+              <Link href="#">Pricing</Link>
             </li>
             <li className="hover:text-foreground/80 text-sm">
-              <Link href="#">
-                  About
-              </Link>
+              <Link href="#">About</Link>
             </li>
             <li className="hover:text-foreground/80 text-sm">
-              <Link href="#">
-                  Features
-              </Link>
+              <Link href="#">Features</Link>
             </li>
             <li className="hover:text-foreground/80 text-sm">
-              <Link href="#">
-                  Blog
-              </Link>
+              <Link href="#">Blog</Link>
             </li>
           </ul>
         </nav>
+        <div className="flex items-center gap-4">
+          {user ? (
+            "user button"
+          ) : (
+            <>
+              <Link href="#"></Link>
+            </>
+          )}
+        </div>
       </div>
     </header>
   );
