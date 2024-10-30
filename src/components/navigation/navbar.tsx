@@ -20,22 +20,22 @@ const Navbar = () => {
           <ul className="flex items-center justify-center gap-8">
             <li className="hover:text-foreground/80 text-sm">
               <Link href="#">
-                 Pricing
+                  Pricing
               </Link>
             </li>
             <li className="hover:text-foreground/80 text-sm">
               <Link href="#">
-                 About
+                  About
               </Link>
             </li>
             <li className="hover:text-foreground/80 text-sm">
               <Link href="#">
-                 Features
+                  Features
               </Link>
             </li>
             <li className="hover:text-foreground/80 text-sm">
               <Link href="#">
-                 Blog
+                  Blog
               </Link>
             </li>
           </ul>
